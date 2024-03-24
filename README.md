@@ -1,22 +1,33 @@
 # 基于Pytorch的医学图像分割：
 
-# 图像分割模型：
-> 3D uent /vnet ，2D unet/ vent 等分割模型；
+# 0.内容大纲
+
+主要介绍基于3Dunet的医学图像分割示例。
+本文以CBCT 3D牙齿分割为示例。
+数据集参考阿里天池的数据，MICCAI 2023 Challenges ：STS-基于3D CBCT的牙齿分割任务：https://tianchi.aliyun.com/competition/entrance/532087
+
+![alt text](image.png)
+
+结果展示：
+![alt text](image-1.png)
 
 
 
-## How to Use
-i have reimplemented the image segmentation loss functions with pytorch1.10.0
+# 1.3D医学图像分割操作实例-以3D牙齿分割为例
 
-there are binary_crossentropy,dice_loss,focal_loss_sigmod etc all has 2d and 3d version.
 
-there are categorical loss functions of crossentropy,dice_loss,focal_loss etc all has 2d and 3d version.
+代码使用步骤：
+假设目前，你已经将数据下载下来，为nii.gz格式数据。该项目代码将从以下五个步骤进行分割训练与推理。
 
-MS-SSIM loss and SSIM loss for calculating image similarity.
+- 1，数据预处理：3D数据增强--->标准化---->resize----> 保存为.npy
+- 2，将训练集，验证集 文件路径写入excel表中，便于读取加载。
+- 3，模型训练，(如果使用服务器可以写一个run.sh的shell脚本)
+- 4，查看模型训练效果，调参等；
+- 5，模型推理，读取nii.gz数据，转成npy，然后再送入加载的模型，输出npy再转成nii.gz格式数据
 
-centerline dice loss for vessel segmentation
 
-there are 9 type of segment metric,including dice,surface disatance,jaccard,VOE,RVD,FNR,FPR,ASSD,RMSD,MSD,etc.
+
+
 
 
 
