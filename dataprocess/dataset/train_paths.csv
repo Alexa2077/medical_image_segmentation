@@ -1,0 +1,7 @@
+Image,Mask
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\0.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\0.npy
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\1.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\1.npy
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\2.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\2.npy
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\3.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\3.npy
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\4.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\4.npy
+F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Image\5.npy,F:\competition\teeth-seg\PytorchDeepLearing-main/dataprocess/dataset/STS_npy_train/Mask\5.npy
