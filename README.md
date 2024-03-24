@@ -20,10 +20,16 @@
 假设目前，你已经将数据下载下来，为nii.gz格式数据。该项目代码将从以下五个步骤进行分割训练与推理。
 
 - 1，数据预处理：3D数据增强--->标准化---->resize----> 保存为.npy
+  - 3D数据增强：   dataprocess/Augmain.py
+  - 标准化和resize  以及保存npy : dataprocess/data3dprocesswithsize.py
 - 2，将训练集，验证集 文件路径写入excel表中，便于读取加载。
+  - test.py 写入excel文件 
 - 3，模型训练，(如果使用服务器可以写一个run.sh的shell脚本)
+  - train.py 可以使用run.sh提交； 
 - 4，查看模型训练效果，调参等；
+  - 模型输出log文件夹
 - 5，模型推理，读取nii.gz数据，转成npy，然后再送入加载的模型，输出npy再转成nii.gz格式数据
+  - inference.py  
 
 
 
